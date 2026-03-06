@@ -4,38 +4,38 @@ Deep coverage of UDP, TCP, and transport-level behavior. Each topic has a dedica
 
 ## Topics
 
-### [1. Transport layer overview](./1-overview.md)
+### [1. Transport layer overview](./1_Overview.md)
 
 Transport layer in OSI model, transport layer protocols (TCP, UDP, others).
 
-### [2. UDP](./2-udp.md)
+### [2. UDP](./2_UDP.md)
 
 What is UDP?, user datagram structure, UDP pros and cons. See [labs/](../labs/README.md) for UDP server examples and capture walkthroughs.
 
-### [3. TCP](./3-tcp.md)
+### [3. TCP](./3_TCP.md)
 
 What is TCP?, TCP segment, flow control, congestion control, slow start vs congestion avoidance, TCP connection states, TCP pros and cons. See [labs/](../labs/README.md) for TCP server examples and capture walkthroughs.
 
-### [4. Sockets, kernel queues, and NAT](./4-sockets-kernel-nat.md)
+### [4. Sockets, kernel queues, and NAT](./4_Sockets_Kernel_Nat.md)
 
 Sockets and kernel queues, listening server, how the kernel manages TCP connections, NAT, private IP addresses.
 
-### [5. TCP performance & tuning](./5-tcp-performance.md)
+### [5. TCP performance & tuning](./5_TCP_Performance.md)
 
 MSS vs MTU vs PMTUD, Nagle's algorithm, delayed acknowledgment, cost of connection establishment, TCP Fast Open, TCP head-of-line blocking.
 
-### [6. Other transport protocols](./6-other-protocols.md)
+### [6. Other transport protocols](./6_Other_Protocols.md)
 
 TCP vs UDP comparison, QUIC, RUDP, DCCP, SCTP.
 
 ## Learning path
 
-1. [Overview](./1-overview.md) → [UDP](./2-udp.md) → [TCP](./3-tcp.md) → [Sockets & NAT](./4-sockets-kernel-nat.md) → [TCP performance](./5-tcp-performance.md) → [Other protocols](./6-other-protocols.md)
+1. [Overview](./1_Overview.md) → [UDP](./2_UDP.md) → [TCP](./3_TCP.md) → [Sockets & NAT](./4_Sockets_Kernel_Nat.md) → [TCP performance](./5_TCP_Performance.md) → [Other protocols](./6_Other_Protocols.md)
 2. For foundations (IP, ICMP, ARP, MTU) see [foundations/](../foundations/README.md).
 3. For L4 vs L7 load balancing and proxies see [services/](../services/README.md).
 4. For replacing TCP in datacenters, port exhaustion, real-world TCP failures see [advanced/](../advanced/README.md).
 
-**Note on DHCP:** DHCP is **not** a transport-layer protocol. It is an **application-layer** protocol (like DNS or HTTP) that **runs over UDP** (ports 67/68). The transport layer provides UDP; DHCP is one of the applications that use it. See [services/8-dhcp](../services/8-dhcp.md).
+**Note on DHCP:** DHCP is **not** a transport-layer protocol. It is an **application-layer** protocol (like DNS or HTTP) that **runs over UDP** (ports 67/68). The transport layer provides UDP; DHCP is one of the applications that use it. See [services/8_DHCP](../services/8_DHCP.md).
 
 ## Cross-references
 

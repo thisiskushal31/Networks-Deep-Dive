@@ -12,7 +12,7 @@ additional detail will go.
 - **Not high-level:** Concepts are explained in depth with packet-level detail,
   protocol behavior, trade-offs, and real-world failure cases where relevant.
 - **Topic files:** Each section (e.g. `foundations/`, `transport/`) has a
-  README that links to numbered topic files (e.g. `1-basics-and-architecture.md`).
+  README that links to numbered topic files (e.g. `1_Basics_And_Architecture.md`).
   Use those files for the full treatment; section READMEs give the map and
   learning path.
 - **Standalone:** Everything you need to read is here. Optional “Further
